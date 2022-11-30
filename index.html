@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sviluppo di una pagina web - Epicode blog</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            margin: 0;
+            background-color: rgba(15, 15, 15, 0.932);
+            color: white;
+        }
+        
+        header{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(46, 40, 40, 0.856);
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: 1em;
+            width: 30em;
+        }
+
+        caption{
+            margin: 0.8em;
+        }
+
+        th{
+            border: 2px, solid, rgb(54, 2, 2);
+        }
+
+        td{
+            border: 2px, solid, rgb(54, 2, 2);
+        }
+
+        tr{
+            text-align: left;
+        }
+
+        button{
+            margin-top: 1em;
+        }
+
+        #correlati{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #correlati, p{
+            margin: 0;
+        }
+
+        #footer{
+            background-color: rgb(24, 23, 23);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="./assets/img/logo.svg" alt="logo">
+    <h3>Epicode il blog dei developers</h3>
+    <a href="#footer">scorri giù</a>
+    <header >
+        <div><a href="#"><h2>Home</h2></a></div>
+        <div><a href="https://join.epicode.com/recordings/"><h2>Articoli</h2></a></div>
+        <div><a href="https://join.epicode.com/members/albertomacis/corsi/"><h2>Job</h2></a></div>
+    </header>
+    <main>
+        <table>
+            <caption>diffusione dei css</caption>
+            <thead>
+                <tr>
+                    <th>anno</th>
+                    <th>% di utilizzo</th>
+                    <th>supporto browser</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2000</td>
+                    <td>20%</td>
+                    <td>12%</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>30%</td>
+                    <td>17%</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>40%</td>
+                    <td>24%</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>50%</td>
+                    <td>42%</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>70%</td>
+                    <td>58%</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        tabella di bebo
+                    </td>
+                </tr>
+            </tfoot>
+        </table><hr>
+        <p>Un tetst di validazione potrà essere fatto tramite il tool online <a href="https://docs.emmet.io/cheat-sheet/">EMMET</a> dedicato allo scopo. <br>
+            Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro: 
+            <div id="yotube"><iframe width="360" height="215" src="https://www.youtube.com/embed/pnNCvnlmJXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
+    </main><br>
+    <aside>
+        <div id="newslatter">
+            <p>Vuoi essere aggiornato su altre novità del blog? Iscriviti alla nostra newslatter</p><br>
+            <form onsubmit="alert('Registrazione effetuata')">
+                <fieldset>
+                    <legend>registration</legend>
+                    <label for="mail">email</label>
+                    <input type="mail" name="mail" placeholder="inserisci la mail">
+                    <button type="submit">Invia registrazione</button>
+                </fieldset>
+            </form>
+        </div><hr>
+        <div>
+            <h2 style="text-align: center;">Articoli correlati</h2>
+        </div>
+        <div id="correlati">
+            <div>
+                <div>Validare il codice HTML</div>
+                <div>Categoria: develop</div>
+                <div>Data: 18/11/22</div>
+            </div>
+            <div>
+                <div>Correggere la sintassi</div>
+                <div>Categoria: develop</div>
+                <div>Data: 22/11/22</div>
+            </div>
+            <div>
+                <div>Meno KB nella pagina</div>
+                <div>Categoria: ottimizzazione</div>
+                <div>Data: 28/11/22</div>
+            </div>
+        </div><hr>
+    </aside><hr>
+    <footer id="footer">
+        <a href="#">scorri su</a>
+        <h3 style="margin: 0;">Blog Epicode 2021</h3><br>
+        <p>Testata online di Alberto Macis, registrata con prot n.213/2018 via dai Cocomeri n.16 - Milano p.iva. 03456248</p>
+        <p><a href="mailto:bebo.macis@gmail.com">bebo.macis@gmail.com</a></p>
+    </footer>
+</body>
+</html>
